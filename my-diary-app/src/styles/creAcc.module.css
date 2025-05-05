@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createdContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    pointer-events: auto;
+    z-index: 999;
+}
+
+.createdBox {
+    width: 90%;
+    max-width: 500px;
+    background-color: #faf4ec; 
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color:#6a7587
+}
+
+.createdBox h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color:#6a7587;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.loginLink {
+    width: 100%;
+    padding:8px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: #976E59;
+    color:rgb(237, 228, 228);
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+.light-dark {
+    position: absolute;
+    margin-bottom: 50px;
+    top:20px;
+    right: 20px;
+    padding: 0;
+}
+  
+.circle {
+    background-color: #151013;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+
+body.darkTheme {
+    background: linear-gradient(-180deg, #3e2a32, #151013);
+  }
+  
+:global(body.darkTheme) .circle {
+    background-color: #b69ea4;
+    color: #151013;
+  }
+
+:global(body.darkTheme) .createdBox{
+    background-color: #b69ea4;
+    color: #151013;
+}
+
+:global(body.darkTheme) .createdBox h2{
+    color: #151013;
+}
+
+:global(body.darkTheme) .loginLink {
+    background-color: #85606a;
+    color:#151013; 
+    border: none;
+}
+

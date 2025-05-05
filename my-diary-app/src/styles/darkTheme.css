@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+
+body.darkTheme {
+    background: linear-gradient(-180deg, #3e2a32, #151013);
+}
+  
+body.darkTheme .circle {
+    background-color: #b69ea4;
+    color: #151013;
+}
+
+body.darkTheme .infoPanel{
+    background-color: rgb(202, 177, 183, 0.8);
+    color:#151013;
+}

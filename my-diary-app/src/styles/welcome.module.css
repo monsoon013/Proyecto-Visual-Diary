@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcomeContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    pointer-events: auto;
+    z-index: 999;
+}
+
+.pageTitle {
+    animation-delay: 2.5s;
+    font-size: 110px;
+    font-weight: 550px;
+    letter-spacing: 7px;
+  }
+
+.descrip {
+    animation-delay: 1.5s;
+    text-align: center;
+    display: flex;
+    opacity: 50%;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-bottom: -10px;
+}
+
+.light-dark {
+    position: absolute;
+    margin-bottom: 50px;
+    top:20px;
+    right: 20px;
+    padding: 0;
+}
+  
+.circle {
+    background-color: #151013;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+  
+body.darkTheme {
+    background: linear-gradient(-180deg, #3e2a32, #151013);
+}
+
+body.darkTheme .circle {
+    background-color: #b69ea4;
+    color: #151013;
+}
+  
+  

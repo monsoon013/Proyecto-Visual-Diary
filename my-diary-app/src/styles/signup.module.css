@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    pointer-events: auto;
+    z-index: 999;
+}
+
+.signUpBox {
+    width: 90%;
+    max-width: 500px;
+    background-color: #faf4ec; 
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.signUpBox h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color:#6a7587;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name {
+    text-align: left;
+    margin-bottom: 5px;
+    color:#6a7587;
+}
+
+.surname{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#6a7587;
+}
+
+.email_ {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#6a7587;
+}
+
+.password {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#6a7587;
+}
+
+.signUpBox button {
+    width: 100%;
+    padding:8px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: #976E59;
+    color:rgb(237, 228, 228);
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+input{
+    border: 2px solid rgb(220, 211, 211);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 10px;
+    width: 100%;
+    background-color: rgb(229, 223, 223);
+}
+
+.light-dark {
+    position: absolute;
+    margin-bottom: 50px;
+    top:20px;
+    right: 20px;
+    padding: 0;
+}
+  
+.circle {
+    background-color: #151013;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+  
+body.darkTheme {
+    background: linear-gradient(-180deg, #3e2a32, #151013);
+  }
+  
+:global(body.darkTheme) .circle {
+    background-color: #b69ea4;
+    color: #151013;
+  }
+
+:global(body.darkTheme) .signUpBox{
+    background-color: #b69ea4;
+    color: #151013;
+}
+
+:global(body.darkTheme) .name {
+    color: #151013;
+}
+
+:global(body.darkTheme) .surname {
+    color: #151013;
+}
+
+:global(body.darkTheme) .password{
+    color: #151013;
+}
+
+:global(body.darkTheme) .email_{
+    color: #151013;
+}
+
+:global(body.darkTheme) .signUpBox h2{
+    color: #151013;
+}
+:global(body.darkTheme) .signUpBox button {
+    background-color: #85606a;
+    color:#151013; 
+    border: none;
+}
+
+:global(body.darkTheme) input {
+    background-color: #ddc3c9;
+}
+    

@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+
+/*Dark mode*/
+.color1 {color: #3e2a32;}
+.color2 {color: #564a4b;}
+.color3 {color: #80676e;}
+.color4 {color: #b69ea4;}
+.color5 {color: #e7e4d6;}
+.color6 {color: #6C84A9;}
+.color7 {color: #271E23;}
+.color8 {color: #F4747B;}
+.color9 {color: #7F6F93;}
+
+/*Light Mode*/
+.color1 {color:#363632;}
+.color2 {color: #40516A;}
+.color3 {color: #976E59;}
+.color4 {color: #947541;}
+.color5 {color: #A0969B;}
+.color6 {color: #e0b09c;}
+.color7 {color: #6a7587;}
+.color8 {color: #faf4ec;}
+body{
+  margin: 0;
+  color:#e7e4d6;
+  background: linear-gradient(-180deg, #A0969B, #e0b09c);
+  opacity: 98%;
+  animation: gradientBG 5s ease infinite;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+button, a, .login, .signup, .info, .light-dark {
+  cursor: pointer;
+}
+
+.infoPanel {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  width: 250px;
+  background-color:rgb(231, 228, 214, 0.8);
+  color:#40516A;
+  padding: 15px 20px;
+  z-index: 100;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 5%;
+}
+
+.slideIn {
+  animation: slideInLeft 0.3s ease forwards;
+}
+
+.slideOut {
+  animation: slideBack 0.3s ease forwards;
+}
+
+.container{
+  transform: scale (0.5);
+  animation: appear 4s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.info {
+  position: absolute;
+  margin-bottom: 50px;
+  top:20px;
+  left: 20px;
+  padding: 0;
+  color: #d0cdbd;
+}
+
+.info
+.info-circle {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.light-dark {
+  position: absolute;
+  margin-bottom: 50px;
+  top:20px;
+  right: 20px;
+  padding: 0;
+}
+
+.circle {
+  background-color: #151013;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s;
+}
+
+.descrip {
+  animation-delay: 1.5s;
+  opacity: 50%;
+  font-size: 17px;
+  letter-spacing: 3px;
+  margin-bottom: -10px;
+}
+
+.pageTitle {
+  animation-delay: 2.5s;
+  font-size: 110px;
+  font-weight: 550px;
+  letter-spacing: 7px;
+}
+
+
+.login,
+.signup {
+animation-delay: 1.5s;
+margin-right: 50px;
+
+}
+
+.login:hover,
+.signup:hover {
+color: #564a4b;
+}
+  
+  
